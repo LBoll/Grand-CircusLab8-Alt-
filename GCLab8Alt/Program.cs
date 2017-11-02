@@ -28,7 +28,7 @@ namespace LabAlt8
             items.Add("fruit punch", 2.99);
             items.Add("grape", 1.99);
             items.Add("lime", 3.99);
-            items.Add("rockin rasperry", 2.99);
+            items.Add("rockin rasperry", 10.99);
 
             Sodas(foodPrices, foodNames, items); //Shows what the user has picked out
 
@@ -62,7 +62,7 @@ namespace LabAlt8
 
         private static void Sodas(ArrayList foodPrices, ArrayList foodNames, Dictionary<string, double> items)
         {
-            string[] itemsList = { "apple", "sour apple", "pineapple", "water", "citrus", "fruit punch", "grape", "lime", "cranberry", };
+            string[] itemsList = { "apple", "sour apple", "pineapple", "water", "citrus", "fruit punch", "grape", "lime", "rockin rasperry", };
 
             bool addMoreItems = true;
             while (addMoreItems)
@@ -115,7 +115,7 @@ namespace LabAlt8
             Console.WriteLine("*======*======*======*======*");
             for (int i = 0; i < foodPrices.Count; i++)
             {
-                Console.WriteLine($"{foodNames[i],-12}${foodPrices[i]}");
+                Console.WriteLine($"{foodNames[i], - 20}${foodPrices[i]}");
             }
         }
 
